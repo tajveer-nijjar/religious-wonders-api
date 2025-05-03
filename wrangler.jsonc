@@ -9,7 +9,25 @@
 	"compatibility_date": "2025-04-26",
 	"observability": {
 		"enabled": true
-	}
+	},
+	"kv_namespaces": [
+	{
+		"binding": "VOTES_TABLE",
+		"id": "a84bad4fb4374af799020c30797881bd"
+	},
+	{
+		"binding": "COUNTRY_TABLE",
+		"id": "24e9322803674b449e852c9f907a25fb"
+	},
+	{
+		"binding": "CITY_TABLE",
+		"id": "3b7ddaadce19400e9792b6592e804c5a"
+	},
+	{
+		"binding": "DEVICE_TABLE",
+		"id": "8be6c7f7ee514bb2af1245d9f969c9af"
+	}]
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
