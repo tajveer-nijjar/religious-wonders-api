@@ -22,6 +22,7 @@ export default {
 			'Access-Control-Allow-Origin': isAllowedOrigin ? origin : 'null',
 			'Access-Control-Allow-Methods': 'POST, OPTIONS, GET',
 			'Access-Control-Allow-Headers': 'Content-Type',
+			'Access-Control-Max-Age': '86400',
 		};
 
 		if (request.method === 'OPTIONS') {

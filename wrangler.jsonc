@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "voting-api",
+	"name": "religious-wonders-api",
 	"main": "src/index.js",
 	"compatibility_date": "2025-04-26",
 	"observability": {
