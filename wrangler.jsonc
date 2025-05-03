@@ -26,7 +26,12 @@
 	{
 		"binding": "DEVICE_TABLE",
 		"id": "8be6c7f7ee514bb2af1245d9f969c9af"
-	}]
+	},
+	{
+		"binding": "TOTAL_VOTE_COUNT",
+		"id": "780692a91d87431683dc1a574bf85001"
+	}
+	],
 
 	/**
 	 * Smart Placement
