@@ -30,6 +30,10 @@
 	{
 		"binding": "TOTAL_VOTE_COUNT",
 		"id": "780692a91d87431683dc1a574bf85001"
+	},
+	{
+		"binding": "VOTE_BLOCKLIST",
+		"id": "d7da2487f3a042078c25e60dce257a71"
 	}
 	],
 

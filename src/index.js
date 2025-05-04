@@ -32,6 +32,18 @@ export default {
 				headers: corsHeaders,
 			});
 		}
+
+		// Checking if can vote.
+		const recentVote = await env.VOTE_BLOCKLIST.get(ip);
+		if (recentVote) {
+			return new Response('You have already voted recently. Try again after 4 hours.', {
+				status: 429,
+				headers: corsHeaders,
+			});
+		}
+		// If the IP is not in the blocklist, proceed with the vote
+		await env.VOTE_BLOCKLIST.put(ip, 'true', { expirationTtl: 14400 }); // Block for 4 hours
+
 		if (request.method === 'POST') {
 			try {
 				const body = await request.json();
